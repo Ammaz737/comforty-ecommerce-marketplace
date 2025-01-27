@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import * as React from "react";
 import { getCartItems, removeFromCart } from "../actions/actions"; // Assuming this is where you're getting cart items
 import Swal from "sweetalert2";
 import Image from "next/image";
