@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { SignInButton, SignedIn, SignedOut, UserButton, SignOutButton } from "@clerk/nextjs";
+import Image from "next/image";
 interface Product {
   _id: string;
   title: string;
@@ -61,10 +62,12 @@ export const Header1: React.FC<Header1Props> = ({ cart }) => {
       <div className="container mx-auto flex justify-between items-center px-4 sm:px-6">
         {/* Logo */}
         <div className="flex items-center">
-          <img
+          <Image
             src="/Image/comforty.png"
             alt="Comforty Logo"
             className="w-32 h-auto"
+            width={128}
+            height={128}
           />
         </div>
 
