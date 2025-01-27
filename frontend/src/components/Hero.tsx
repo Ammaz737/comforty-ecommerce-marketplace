@@ -50,7 +50,7 @@ const Hero = () => {
 
         <div className="md:w-1/2 flex justify-center">
           <Image
-            src="/Image/chair.png"
+            src="/image/chair.png"
             alt="Modern Chair"
             width={400}
             height={400}
@@ -89,7 +89,7 @@ export const Hero2: React.FC = () => {
         {products.map((product) => (
           <div key={product.id} className="border border-gray-200 rounded-lg p-4 flex flex-col items-center shadow-sm">
             <div className="relative w-full h-48 mb-4">
-              <Image src={product.image} alt={product.title} width={500} height={500} className="object-cover rounded-lg" />
+              <Image src={product.Image} alt={product.title} width={500} height={500} className="object-cover rounded-lg" />
               {product.label && (
                 <span className={`absolute top-2 left-2 text-xs text-white px-2 py-1 rounded ${product.labelColor}`}>
                   {product.label}
@@ -129,7 +129,7 @@ export const Hero3: React.FC = () => {
         {categories.map((category) => (
           <div key={category.id} className="relative rounded-lg shadow-lg overflow-hidden">
             <div className="aspect-w-4 aspect-h-3">
-              <Image src={category.imageUrl} alt={category.title} width={category.width} height={category.height} className="w-full h-full object-cover" />
+              <Image src={category.ImageUrl} alt={category.title} width={category.width} height={category.height} className="w-full h-full object-cover" />
             </div>
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 text-white">
               <h3 className="text-lg font-semibold">{category.title}</h3>
